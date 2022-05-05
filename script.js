@@ -1,4 +1,3 @@
-console.log("I am groot")
 function computerPlay()
 {
     let outputs=['Rock','Paper','Scissor']
