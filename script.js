@@ -46,12 +46,3 @@ function playRound(playerselection,x)
         return("Both of you have played Scissors so no one wins") 
     }
 }
-function game()
-{
-    for(let i=0;i<5;i++)
-    {
-        console.log("inside for loop")
-        console.log(playRound(x=window.prompt("Enter what u wanna play ", ''),computerPlay))
-    }
-}
-game()
