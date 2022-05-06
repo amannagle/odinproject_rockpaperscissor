@@ -47,7 +47,14 @@ function playRound(playerselection,x)
 }
 function imageclicked(e)
 {
-    console.log(e.target.firstChild.id);
+    if(e.target.tagName == 'P')
+    console.log(e.target.previousElementSibling.id);
+    else if(e.target.tagName == 'IMG')
+    console.log(e.target.id);
+    else
+    console.log(e.target.firstChild.id)
+    // console.log(playRound(e.target.firstChild.id,computerPlay));
+
 }
 // console.log(playRound('rock',computerPlay));
 const images = document.querySelectorAll('.image')
