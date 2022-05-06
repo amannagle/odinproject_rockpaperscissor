@@ -1,4 +1,3 @@
-console.log("I am groot")
 function computerPlay()
 {
     let outputs=['Rock','Paper','Scissor']
@@ -46,3 +45,4 @@ function playRound(playerselection,x)
         return("Both of you have played Scissors so no one wins") 
     }
 }
+console.log(playRound('rock',computerPlay));
