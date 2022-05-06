@@ -45,3 +45,4 @@ function playRound(playerselection,x)
         return("Both of you have played Scissors so no one wins") 
     }
 }
+console.log(playRound('rock',computerPlay));
