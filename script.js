@@ -45,4 +45,12 @@ function playRound(playerselection,x)
         return("Both of you have played Scissors so no one wins") 
     }
 }
-console.log(playRound('rock',computerPlay));
+function imageclicked(e)
+{
+    console.log(e.target.firstChild.id);
+}
+// console.log(playRound('rock',computerPlay));
+const images = document.querySelectorAll('.image')
+images.forEach((image)=>{
+    image.addEventListener('click',imageclicked);
+})
