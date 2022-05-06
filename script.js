@@ -47,13 +47,14 @@ function playRound(playerselection,x)
 }
 function imageclicked(e)
 {
+    let player=''
     if(e.target.tagName == 'P')
-    console.log(e.target.previousElementSibling.id);
+    player=e.target.previousElementSibling.id;
     else if(e.target.tagName == 'IMG')
-    console.log(e.target.id);
+    player=e.target.id;
     else
-    console.log(e.target.firstChild.id)
-    // console.log(playRound(e.target.firstChild.id,computerPlay));
+    player=e.target.firstChild.id;
+    console.log(playRound(player,computerPlay));
 
 }
 // console.log(playRound('rock',computerPlay));
